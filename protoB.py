@@ -6,6 +6,7 @@ import os
 # Create your views here.
 def index():
 	person = person_pb2.Person()
+	#get the directory where this script is running, we stored .proto and generated file here too
 	script_dir = os.path.dirname(__file__)
 	rel_path = "dummy"
 	abs_file_path = os.path.join(script_dir, rel_path)	
